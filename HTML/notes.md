@@ -55,5 +55,93 @@ Users often skim a page by its headings. It is important to use headings to show
 
 4️⃣ Paragraph & Text Formatting
 
+The HTML <p> element defines a paragraph.
+
+A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+
+## Ex - 
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+## HTML Display 
+
+You cannot be sure how HTML will be displayed.
+Large or small screens, and resized windows will create different results.
+With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+The browser will automatically remove any extra spaces and lines when the page is displayed.
+
+## HTML Horizontal Rule
+
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule
+
+## The HTML <pre> Element
+
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+
+## HTML Formatting Elements
+
+Formatting elements were designed to display special types of text:
+
+# <b> - Bold text
+# <strong> - Important text
+# <i> - Italic text
+# <em> - Emphasized text
+# <mark> - Marked text
+# <small> - Smaller text
+# <del> - Deleted text
+# <ins> - Inserted text
+# <sub> - Subscript text
+# <sup> - Superscript text
+
+
+5️⃣ HTML Links 
+
+## HyperLinks
+
+HTML links are hyperlinks.
+You can click on a link and jump to another document.
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+# Syntax 
+
+The HTML <a> tag defines a hyperlink. It has the following syntax:
+
+<a href="url">link text</a>
+
+# The target Attribute
+
+By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+# Absolute URLs vs. Relative URLs
+
+Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+
+Ex :
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+# Use an Image as a Link
+
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
 
 
