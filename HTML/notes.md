@@ -3,13 +3,13 @@ HTML (HyperText Markup Language) is the standard markup language used to structu
 
 It defines:
 
-Headings
-Paragraphs
-Links
-Images
-Forms
-Tables
-Layout structure
+- Headings
+- Paragraphs
+- Links
+- Images
+- Forms
+- Tables
+- Layout structure
 
 HTML is not a programming language — it is a markup language.
 
@@ -17,7 +17,7 @@ HTML is not a programming language — it is a markup language.
 
 2️⃣ Basic HTML Structure -
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,25 +26,25 @@ HTML is not a programming language — it is a markup language.
 <body>
     <h1>Hello World</h1>
 </body>
-</html>
+</html> -->
 
 Explanation:
 
-<!DOCTYPE html> → Defines HTML5
-<html> → Root element
-<head> → Metadata
-<body> → Visible content
+- <!DOCTYPE html> → Defines HTML5
+- <html> → Root element
+- <head> → Metadata
+- <body> → Visible content
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 3️⃣ Headings
 
-<h1>Main Heading</h1>
-<h2>Sub Heading</h2>
-<h3>Section Heading</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
+- <h1>Main Heading</h1>
+- <h2>Sub Heading</h2>
+- <h3>Section Heading</h3>
+- <h4>Heading 4</h4>
+- <h5>Heading 5</h5>
+- <h6>Heading 6</h6>
 
 
 Search engines use the headings to index the structure and content of your web pages.
@@ -82,16 +82,16 @@ The text inside a <pre> element is displayed in a fixed-width font (usually Cour
 
 Formatting elements were designed to display special types of text:
 
-<b> - Bold text
-<strong> - Important text
-<i> - Italic text
-<em> - Emphasized text
-<mark> - Marked text
-<small> - Smaller text
-<del> - Deleted text
-<ins> - Inserted text
-<sub> - Subscript text
-<sup> - Superscript text
+- <b> - Bold text
+- <strong> - Important text
+- <i> - Italic text
+- <em> - Emphasized text
+- <mark> - Marked text
+- <small> - Smaller text
+- <del> - Deleted text
+- <ins> - Inserted text
+- <sub> - Subscript text
+- <sup> - Superscript text
 
 ---------------------------------------------------------------------------------------------------------------------------
 
