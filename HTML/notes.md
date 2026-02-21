@@ -78,7 +78,7 @@ The browser will automatically remove any extra spaces and lines when the page i
 
 The hr tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule
 
-**The HTML <pre> Element**
+**The HTML pre Element**
 
 The text inside a pre element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
 
@@ -155,16 +155,12 @@ Ex :
 
 **HTML Images Syntax**
 
-The HTML img tag is used to embed an image in a web page.
-
-Images are not technically inserted into a web page; images are linked to web pages. The img tag creates a holding space for the referenced image.
-
-The img tag is empty, it contains attributes only, and does not have a closing tag.
-
-The img tag has two required attributes:
-
-src - Specifies the path to the image
-alt - Specifies an alternate text for the image
+- The HTML img tag is used to embed an image in a web page.
+- Images are not technically inserted into a web page; images are linked to web pages. The img tag creates a holding space for the referenced image.
+- The img tag is empty, it contains attributes only, and does not have a closing tag.
+- The img tag has two required attributes:
+- src - Specifies the path to the image
+- alt - Specifies an alternate text for the image
 ```html
 <img src="url" alt="alternatetext">
 ```
@@ -191,11 +187,10 @@ alt - Specifies an alternate text for the image
 <tbody>	Groups the body content in a table
 <tfoot>	Groups the footer content in a table
 ```
-**Table Cells <td> -**
+**Table Cells -**
 
-td stands for table data 
-
-Everything between <td> and </td> is the content of a table cell.
+- td stands for table data 
+- Everything between td and /td is the content of a table cell.
 
 Ex - 
 ```html
@@ -208,4 +203,45 @@ Ex -
 </table>
 ```
 
+**Table Rows -**
 
+Each Table row starts with tr and ends with a /tr tag
+
+```html
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+```
+
+**Table Headers -**
+
+Sometimes you want your cells to be table header cells. In those cases use the th tag instead of the td tag:
+
+```html
+<table>
+  <tr>
+    <th>Vaibhav</th>
+    <th>Dog</th>
+    <th>Rio</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+```
