@@ -63,7 +63,7 @@ The CSS rule below will be applied to the HTML element with id="para1":
   color: red;
 }
 ```
-Note that the id name cannot start with a number
+- Note that the id name cannot start with a number
 
 2. The CSS class Selector
 The class selector selects HTML elements with a specific class attribute.
@@ -75,3 +75,52 @@ In this example all HTML elements with class="center" will be red and center-ali
   color: red;
 }
 ```
+- HTML elements can also refer to more than one class.
+
+In this example the ```html<p>``` element will be styled according to class="center" and to class="large": 
+
+```css
+<p class="center large">This paragraph refers to two classes.</p>
+```
+
+3. The CSS Universal Selector
+- The universal selector (*) selects all HTML elements on the page.
+
+The CSS rule below will affect every HTML element on the page: 
+```css
+* {
+  text-align: center;
+  color: blue;
+}
+```
+
+4. The CSS Grouping Selector
+- The grouping selector selects all the HTML elements with the same style definitions.
+
+The grouping selector selects all the HTML elements with the same style definitions.
+
+```css
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+```
+- It will be better to group the selectors, to minimize the code.
+- To group selectors, separate each selector with a comma.
+
+```css
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+```
+
+
+
+
+
