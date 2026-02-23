@@ -27,8 +27,8 @@ To build strong foundations in:
 | Module | Status |
 |--------|--------|
 | VS Code, Git, CLI | ✅ Completed |
-| HTML5 | ⏳ In Progress |
-| CSS | ⏳ Pending |
+| HTML5 | ✅ Completed |
+| CSS | ⏳ In Progress |
 | JavaScript | ⏳ Pending |
 | MERN Stack | ⏳ Pending |
 | Machine Learning | ⏳ Pending |
