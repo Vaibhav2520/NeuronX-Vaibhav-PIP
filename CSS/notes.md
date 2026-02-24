@@ -120,7 +120,7 @@ h1, h2, p {
 }
 ```
 
-5️⃣ CSS Borders
+## 5️⃣ CSS Borders
 
 The CSS border properties allow you to specify the style, width, and color of an element's border.
 
@@ -183,13 +183,13 @@ p {
 }
 ```
 
-**4.CSS Padding**
+## 6️⃣ CSS Padding
 
 The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
 
 With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left), and a shorthand property for setting all the padding properties in one declaration.
 
-# Padding - Individual Sides
+**Padding - Individual Sides**
 
 CSS has properties for specifying the padding for each side of an element:
 
@@ -204,6 +204,69 @@ All the padding properties can have the following values:
 - % - specifies a padding in % of the width of the containing element
 - inherit - specifies that the padding should be inherited from the parent element
 
+**Padding - Shorthand Property**
+
+To shorten the code, it is possible to specify all the padding properties in one declaration.
+
+The padding property is a shorthand property for the following individual padding properties:
+
+- padding-top
+- padding-right
+- padding-bottom
+- padding-left
+
+Here is how it works:
+
+If the padding property has four values:
+
+- padding: 25px 50px 75px 100px;
+  - top padding is 25px
+  - right padding is 50px
+  - bottom padding is 75px
+  - left padding is 100px
+
+```css
+div {
+  padding: 25px 50px 75px 100px;  
+}
+```
+
+## 7️⃣ CSS Box Model
+
+- In CSS, the term "box model" is used when talking about web design and layout.
+- The CSS box model is essentially a box that wraps around every HTML element.
+- Every box consists of four parts: content, padding, borders and margins.
+
+1. Content - The content of the box, where text and images appear
+2. Padding - Clears an area around the content. The padding is transparent
+3. Border - A border that goes around the padding and content
+4. Margin - Clears an area outside the border. The margin is transparent
+
+**Example**
+```css
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+```
+## 8️⃣ CSS Z-index
+
+- The z-index property specifies the stack order of positioned elements.
+- The stack order defines which element should be placed in front or behind other elements.
+- When elements are positioned, they can overlap other elements.
+
+**Example**
+
+```css
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+```
 
 
 
