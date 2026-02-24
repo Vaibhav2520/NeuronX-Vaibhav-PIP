@@ -120,6 +120,89 @@ h1, h2, p {
 }
 ```
 
+5️⃣ CSS Borders
+
+The CSS border properties allow you to specify the style, width, and color of an element's border.
+
+**1.CSS Border Style**
+
+The border-style property specifies what kind of border to display.
+
+The following values are allowed:
+
+- dotted - Defines a dotted border
+- dashed - Defines a dashed border
+- solid - Defines a solid border
+- double - Defines a double border
+- groove - Defines a 3D grooved border. The effect depends on the border-color value
+- ridge - Defines a 3D ridged border. The effect depends on the border-color value
+- inset - Defines a 3D inset border. The effect depends on the border-color value
+- outset - Defines a 3D outset border. The effect depends on the border-color value
+- none - Defines no border
+- hidden - Defines a hidden border
+
+The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+
+**2.CSS Border Width**
+
+- The border-width property specifies the width of the four borders.
+- The width can be set as a specific size (in px, pt, cm, em, etc)
+
+# Example
+
+```css
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px 20px; /* 2px top and bottom, 20px on the sides */
+}
+
+p.four {
+  border-style: dotted;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+}
+```
+
+**3.CSS Rounded Borders**
+
+The border-radius property is used to add rounded borders.
+
+```css
+p {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+```
+
+**4.CSS Padding**
+
+The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left), and a shorthand property for setting all the padding properties in one declaration.
+
+# Padding - Individual Sides
+
+CSS has properties for specifying the padding for each side of an element:
+
+- padding-top - sets the top padding of an element
+- padding-right - sets the right padding of an element
+- padding-bottom - sets the bottom padding of an element
+- padding-left - sets the left padding of an element
+
+All the padding properties can have the following values:
+
+- length - specifies a padding in px, pt, cm, etc.
+- % - specifies a padding in % of the width of the containing element
+- inherit - specifies that the padding should be inherited from the parent element
 
 
 
