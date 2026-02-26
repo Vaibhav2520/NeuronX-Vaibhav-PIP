@@ -28,8 +28,8 @@ To build strong foundations in:
 |--------|--------|
 | VS Code, Git, CLI | ✅ Completed |
 | HTML5 | ✅ Completed |
-| CSS | ⏳ In Progress |
-| JavaScript | ⏳ Pending |
+| CSS |✅ Completed|
+| JavaScript | ⏳ In progress |
 | MERN Stack | ⏳ Pending |
 | Machine Learning | ⏳ Pending |
 | Final AI Project | ⏳ Pending |
