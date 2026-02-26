@@ -267,6 +267,131 @@ img {
   z-index: -1;
 }
 ```
+## 9️⃣ CSS Flexbox
+
+- CSS Flexbox is short for the CSS Flexible Box Layout module.
+- Flexbox is a layout model for arranging items (horizontally or vertically) within a container, in a flexible and responsive way.
+- Flexbox makes it easy to design a flexible and responsive layout, without using float or positioning.
+- CSS Flexbox is used for a one-dimensional layout, with rows OR columns.
+- CSS Grid is used for a two-dimensional layout, with rows AND columns.
+
+**A Flex Container with Three Flex Items**
+```css
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.container div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+
+</body>
+</html>
+```
+
+## CSS Flex Container
+
+1. CSS Flex Container Properties
+
+The flex container element can have the following properties:
+
+- display - Must be set to flex or inline-flex
+- flex-direction - Sets the display-direction of flex items
+- flex-wrap - Specifies whether the flex items should wrap or not
+- flex-flow - Shorthand property for flex-direction and flex-wrap
+- justify-content - Aligns the flex items when they do not use all available space on the main-axis (horizontally)
+- align-items - Aligns the flex items when they do not use all available space on the cross-axis (vertically)
+- align-content - Aligns the flex lines when there is extra space in the cross axis and flex items wrap
+
+2. CSS flex-direction Property
+
+The flex-direction property specifies the display-direction of flex items in the flex container.
+
+- row 
+- column
+- row-reverse
+- column-reverse
+
+The row value is the default value, and it displays the flex items horizontally (from left to right):
+```css
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+```
+
+3. CSS flex-wrap Property
+
+The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.
+
+This property can have one of the following values:
+
+- nowrap
+- wrap
+- wrap-reverse
+
+4. CSS flex-flow Property 
+
+The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
 
 
+```css
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+```
+
+5. CSS Flexbox justify-content
+
+The justify-content property aligns flex items along the main axis (horizontally).
+
+This property can have one of the following values:
+
+- center
+- flex-start (default)
+- flex-end
+- space-around
+- space-between
+- space-evenly
+
+**Example**
+```css
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+```
+
+
+6. CSS Flexbox Align
+
+This page covers align-items, align-content, and true centering with Flexbox.
+
+The align-items property is used to align the flex items vertically (on the cross-axis).
+
+This property can have one of the following values:
+
+- normal (default)
+- stretch
+- center
+- flex-start
+- flex-end
+- baseline
 
