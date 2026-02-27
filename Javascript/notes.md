@@ -208,6 +208,105 @@ var x = 2;
 // Here x is 2
 ```
 
+## 4️⃣ JavaScript Const
+
+- Variables defined with const cannot be Reassigned.
+- Variables defined with const have Block Scope.
+
+**Cannot be Reassigned**
+
+```js
+const PI = 3.141592653589793;
+PI = 3.14;      // This will give an error
+PI = PI + 10;   // This will also give an error
+```
+
+**When to use JavaScript const?**
+Always declare a variable with const when you know that the value should not be changed.
+
+Use const when you declare:
+
+- A new Array
+- A new Object
+- A new Function
+- A new RegExp
+
+**Constant Arrays**
+
+```js
+// You can create a constant array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// You can change an element:
+cars[0] = "Toyota";
+
+// You can add an element:
+cars.push("Audi");
+```
+
+**Constant Objects**  
+
+```js
+// You can create a const object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// You can change a property:
+car.color = "red";
+
+// You can add a property:
+car.owner = "Johnson";
+```
+
+## 5️⃣ Javascript Types
+
+| Type | Description |
+|--------|--------|
+| String | A text of characters enclosed in quotes |
+| Number | A number representing a mathematical value |
+| Bigint |A number representing a large integer|
+| Boolean |A data type representing true or false |
+| Object | A collection of key-value pairs of data |
+| Undefined| 	A primitive variable with no assigned value |
+| Symbol | A unique and primitive identifier |
+
+```js
+// String
+let color = "Vaibhav";
+let lastName = "Sulakhe";
+
+// Number
+let length = 20;
+let weight = 10;
+
+// BigInt
+let x = 1234567890123456789012345n;
+let y = BigInt(1234567890123456789012345)
+
+// Boolean
+let x = true;
+let y = false;
+
+// Object
+const person = {firstName:"Vaibhav", lastName:"Sulakhe"};
+
+// Array object
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object
+const date = new Date("2022-03-25");
+
+// Undefined
+let x;
+let y;
+
+// Null
+let x = null;
+let y = null;
+
+// Symbol
+const x = Symbol();
+const y = Symbol();
+```
 
 
 
