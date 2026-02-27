@@ -154,6 +154,59 @@ let total = price1 + price2;
 4. Only use let if you cannot use const
 5. Never use var if you can use let or const.
 
+## 3️⃣ Javascript Let
+
+- Variables declared with let have Block Scope
+- Variables declared with let must be Declared before use
+- Variables declared with let cannot be Redeclared in the same scope
+
+**Block Scope**
+
+- JavaScript had Global Scope and Function Scope.
+- ES6 introduced the two new JavaScript keywords: let and const.
+- These two keywords provided Block Scope in JavaScript:
+```js
+{
+  let x = 2;
+}
+// x can NOT be used here
+```
+**Function Scope**
+
+```js
+function myfunction() {
+  var x = 1;
+  let y = 2;
+  const z = 3;
+}
+//x can NOT be used here
+//y can NOT be used here
+//z can NOT be used here
+```
+
+**Globe Scope**
+- Variables declared with the var always have Global Scope.
+- Variables declared with the var keyword can NOT have block scope:
+```js
+{
+  var x = 2;
+}
+// x CAN be used here
+```
+
+**Redeclaring Variables**
+- Redeclaring a variable inside a block will also redeclare the variable outside the block:
+```js
+var x = 10;
+// Here x is 10
+
+{
+var x = 2;
+// Here x is 2
+}
+
+// Here x is 2
+```
 
 
 
