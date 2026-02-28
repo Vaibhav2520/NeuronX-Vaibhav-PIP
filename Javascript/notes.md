@@ -308,5 +308,76 @@ const x = Symbol();
 const y = Symbol();
 ```
 
+## 6️⃣ JS Conditions
+
+**Conditional Statements**
+
+- Conditional Statements allow us to perform different actions for different conditions.
+- Conditional statements run different code depending on true or false conditions.
 
 
+**When to use Conditionals**
+
+- Use if to specify a code block to be executed, if a specified condition is true
+- Use else to specify a code block to be executed, if the same condition is false
+- Use else if to specify a new condition to test, if the first condition is false
+- Use switch to specify many alternative code blocks to be executed
+- Use (? :) (ternary) as a shorthand for if...else
+
+1. JavaScript if
+
+- Use the JavaScript if statement to execute a block of code when a condition is true.
+ 
+**Syntax** 
+```js
+if (condition) {
+  //  block of code to be executed if the condition is true
+}
+```
+
+**Example**
+```js
+let age = 18;
+let text = "You can Not drive";
+
+if (age >= 18) {
+  text = "You can drive!";
+}
+```
+
+**Nested If**
+
+```js
+let age = 16;
+let country = "USA";
+let text = "You can Not drive!";
+
+if (country == "USA") {
+  if (age >= 16) {
+    text = "You can drive!";
+  }
+}
+```
+
+**The Conditional (Ternary) Operator**
+
+# Syntax 
+
+(condition) ? expression1 : expression2
+
+- The conditional operator is a shorthand for writing conditional if...else statements.
+- It is called a ternary operator because it takes three operands.
+
+| Parameter | Description |
+|--------|--------|
+| condition | Required.
+The condition to be tested.
+An expression that evaluates to true or false. |
+| ? | Required.
+The operator separating the condition from the expressions. |
+| expression1 |	Required.
+The value to return if the condition is true.|
+| : |Required.
+The operator separating the expressions. |
+| expression2 | Required.
+The value to return if the condition is false. |
