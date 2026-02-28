@@ -381,3 +381,50 @@ The value to return if the condition is true.|
 The operator separating the expressions. |
 | expression2 | Required.
 The value to return if the condition is false. |
+
+**Example**
+
+```js
+let text = (age < 18) ? "Minor" : "Adult";
+```
+
+## 7️⃣ JS Loops
+
+**JS For Loop**
+- Use a for loop to collect the car names from the cars array:
+
+```js
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let len = cars.length;
+
+let text = "";
+for (let i = 0; i < len; i++) {      // for loop syntax
+  text += cars[i];
+}
+```
+
+**JS While Loop**
+
+- The while loop loops through a block of code as long as a specified condition is true.
+
+**Example**
+```js
+while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}
+```
+
+**JS Do while Loop**
+
+- The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+- The do while runs at least once, even if the condition is false from the start.
+
+```js
+do {
+  text += "The number is " + i;
+  i++;
+}
+while (i < 10);
+```
+
