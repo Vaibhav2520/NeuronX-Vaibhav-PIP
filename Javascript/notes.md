@@ -518,3 +518,81 @@ const add = (a, b) => {
 
 - Objects are variables that can store both values and functions.
 - Functions are stored as key:function() pairs called methods.
+
+**Example**
+```js
+const car = {
+  type: "Fiat",
+  model: "500",
+  color: "white"
+};
+```
+
+- type, model, and color are properties
+- "Fiat", 500, and "white" are property values
+
+**Object Properties**
+
+- Properties are key:value Pairs
+- A JavaScript object is a collection of properties
+- Properties can be changed, added, and deleted.
+
+**Example**
+```js
+// objectName.property
+let age = person.age;
+```
+```js
+//objectName["property"]
+let age = person["age"];
+```
+```js
+//objectName[expression]
+let age = person[x];
+```
+
+**Dot Notation**
+```js
+objectName.propertyName
+person.firstname + " is " + person.age;
+```
+
+**Deleting Properties**
+- The delete keyword deletes a property from an object:
+
+```js
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+};
+
+delete person.age;
+```
+
+**Check if a Property Exists**
+
+- Use the in operator to check if a property exists in an object:
+
+```js
+const person = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+let result = ("firstName" in person);
+```
+
+**Nested Objects**
+
+```js
+myObj = {
+  name:"John",
+  age:30,
+  myCars: {
+    car1:"Ford",
+    car2:"BMW",
+    car3:"Fiat"
+  }
+}
+```
