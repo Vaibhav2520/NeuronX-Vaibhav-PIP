@@ -428,3 +428,93 @@ do {
 while (i < 10);
 ```
 
+## 8️⃣ JS Arrays
+
+An Array is an object type designed for storing data collections.
+
+**Why Use Arrays?**
+
+If you have a list of items (a list of car names, for example), storing the names in single variables could look like this:
+
+```js
+let car1 = "Saab";
+let car2 = "Volvo";
+let car3 = "BMW";
+```
+
+**Creating an Array**
+
+**Syntax**
+```js
+const array_name = [item1, item2, ...];      
+```
+
+## 9️⃣ Functions
+
+- Functions are Code Blocks
+- Functions are reusable code blocks designed to perform a particular task.
+- Functions are executed when they are called or invoked.
+
+**What Does a Function Look Like?**
+
+**Example**
+```js
+function sayHello() {
+  return "Hello World";
+}
+```
+**Functions Run When You Call Them**
+
+To run a function, you call it by using its name followed by parentheses like sayHello():
+
+```js
+function sayHello() {
+  return "Hello World";
+}
+let message = sayHello(); // A Function Can Be Used Many Times
+// Note that values returned from functions can be stored in variables
+```
+
+**Function Invocation**
+
+The code inside a function will execute when "something" invokes the function:
+
+- When it is called from JavaScript code
+- When an event occurs (a user clicks a button)
+- Automatically (self invoked)
+
+It is common to use the term invoke, because a function can be invoked without being called.
+
+**Example**
+
+toCelsius() invokes the toCelsius function:
+```js
+// Convert Fahrenheit to Celsius:
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+
+// Call the toCelcius() function
+let value = toCelsius(77);
+```
+
+**JavaScript Arrow Functions**
+
+- Arrow Functions allow a shorter syntax for function expressions.
+
+You can skip the function keyword, the return keyword, and the curly brackets:
+```js
+const add = (a, b) => a * b;
+```
+
+**Syntax**
+```js
+const add = (a, b) => {
+  return a + b;
+};
+```
+
+## 🔟 JS Objects
+
+- Objects are variables that can store both values and functions.
+- Functions are stored as key:function() pairs called methods.
