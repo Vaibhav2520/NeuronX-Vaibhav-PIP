@@ -361,7 +361,7 @@ if (country == "USA") {
 
 **The Conditional (Ternary) Operator**
 
-# Syntax 
+**Syntax** 
 
 (condition) ? expression1 : expression2
 
@@ -595,4 +595,97 @@ myObj = {
     car3:"Fiat"
   }
 }
+```
+
+## 1️⃣2️⃣ JS Asynchronous
+
+1. setTimeout() Method
+
+- The setTimeout() method schedules a function to run after a delay in milliseconds.
+- When using the setTimeout() method, you can specify a function to be executed on time-out:
+
+```js
+setTimeout(myFunction, 3000);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I love You !!";
+}
+```
+- In the example above, myFunction is passed to setTimeout() as an argument.
+- 3000 is the number of milliseconds before myFunction will be called.
+
+2. setInterval() Method
+
+- When using the setInterval() method, you can specify function to be executed for each interval:
+
+```js
+setInterval(myFunction, 1000);
+
+function myFunction() {
+  let d = new Date();
+  document.getElementById("demo").innerHTML=
+  d.getHours() + ":" +
+  d.getMinutes() + ":" +
+  d.getSeconds();
+}
+```
+- In the example above, myFunction is passed to setInterval() as an argument.
+- 1000 is the number of milliseconds between every time myFunction will be called.
+
+3. Callback method
+
+- A callback function is a function passed as an argument into another function.
+- The callback function is intended to be executed later, typically when a specific event occurs or an asynchronous operation completes.
+
+**Event Handling**
+- Callbacks are often used in JavaScript, especially in event handling:
+- User interactions, such as button clicks or key presses, can be handled by providing a callback function to an event listener.
+
+```js
+document.getElementById("myButton").addEventListener("click", displayDate);
+```
+- In the example above, displayDate is a callback function passed as an argument to the addEventListener() method.
+- displayDate will be called when a user clicks the button with id="myButton".
+
+**Asynchronous Operations**
+- Windows functions like setTimeout() use callbacks to execute code after a specified delay.
+
+```js
+setTimeout(myFunction, 3000);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I love You !!";
+}
+```
+
+- In the example above, myFunction is a callback function passed as an argument to setTimeout().
+- 3000 is the number of milliseconds before myFunction will be called.
+
+**The Timing Problem**
+- Asynchronous code finishes later.
+- This means you cannot return the result right away (before they are finished).
+
+```js
+let result;
+
+setTimeout(function() {
+  result = 5;
+}, 1000);
+
+// What is result here?  undefined
+```
+
+- The solution to the problem above, is to run the code after the result is ready.
+- You must give JavaScript a callback function to call later.
+
+```js
+function done(value) {
+  myDisplayer(value);
+}
+
+setTimeout(function() {
+  done(5);
+}, 1000);
+
+// What is result here? 5 
 ```
