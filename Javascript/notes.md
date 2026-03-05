@@ -790,3 +790,135 @@ myPromise.then(
   function(value) {myDisplayer(value);}
 );
 ```
+
+## Note
+- A promise represents a value that will be available later.
+- A promise is a container for a future result.
+- The result can be a value or an error.
+
+**The JavaScript Promise Object**
+
+- A Promise contains both the producing code and calls to the consuming code:
+
+```js
+let myPromise = new Promise(function(resolve, reject) {
+
+// "Producing Code" (May take some time)
+
+  resolve(value); // when successful
+  reject(value);  // when error
+});
+
+// "Consuming Code" (Must wait for a fulfilled Promise)
+myPromise.then(
+  function(value) { /* code if success */ },
+  function(value) { /* code if error */ }
+);
+```
+
+**Using then and catch**
+
+- You do not read a promise result immediately.
+- You attach code that runs when the promise finishes.
+- then() runs when a promise is fulfilled.
+- catch() runs when a promise is rejected.
+
+```js
+let promise = Promise.resolve("OK");
+
+promise
+.then(function(value) {
+  console.log(value);
+})
+.catch(function(value) {
+  myDisplayer(value);
+});
+```
+5. JS async and await
+
+**Why async and await Exist?**
+
+- Promise chains can become long.
+- async and await were created to reduce nesting and improve readability.
+
+**Example**
+```js
+// Three functions to run in steps
+function step1() {
+  return Promise.resolve("A");
+}
+function step2(value) {
+  return Promise.resolve(value + "B");
+}
+function step3(value) {
+  return Promise.resolve(value + "C");
+}
+
+// Run the three functions in steps
+step1()
+.then(function(value) {
+  return step2(value);
+})
+.then(function(value) {
+  return step3(value);
+})
+.then(function(value) {
+  myDisplayer(value);
+});
+```
+- The same flow with async and await is easier to read.
+
+```js
+// Function to run the three functions in steps
+async function run() {
+  let v1 = await step1();
+  let v2 = await step2(v1);
+  let v3 = await step3(v2);
+  myDisplayer(v3);
+}
+
+run();
+```
+
+**The async Keyword**
+- The async keyword before a function makes the function return a promise.
+- This is true even if you return a normal value.
+
+**The await Keyword**
+- The await keyword makes a function pause the execution and wait for a resolved promise before it continues:
+- The await keyword can only be used inside an async function:
+
+```js
+function step1() {
+  return Promise.resolve("A");
+}
+
+async function run() {
+  let value = await step1();
+  myDisplayer(value);
+}
+
+run();
+```
+
+**Handling Errors with try...catch**
+
+- Promises use catch() for errors.
+- async and await use try...catch.
+
+```js
+function fail() {
+  return Promise.reject("Failed");
+}
+
+async function run() {
+  try {
+    let value = await fail();
+    console.log(value);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+run();
+```
