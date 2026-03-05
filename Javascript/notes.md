@@ -597,7 +597,7 @@ myObj = {
 }
 ```
 
-## 1️⃣2️⃣ JS Asynchronous
+## 1️⃣1️⃣ JS Asynchronous
 
 1. setTimeout() Method
 
@@ -688,4 +688,105 @@ setTimeout(function() {
 }, 1000);
 
 // What is result here? 5 
+```
+
+**Sequence Control**
+- Sometimes you would like to have better control over when to execute a function.
+- You could first call the calculator function myCalculator, and then call the display function myDisplayer:
+```js
+// Funtion to display something
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+// Function to calculate a sum
+function myCalculator(num1, num2) {
+  let sum = num1 + num2;
+  return sum;
+}
+
+// Call the calculator
+let result = myCalculator(5, 5);
+
+// Call the displayer
+myDisplayer(result);
+```
+
+**Callback Error Handling**
+
+- Async code can fail
+
+**Example**
+```js
+function getData(callback) {
+  let ok = true;
+
+  if (ok) {
+    callback(null, "Data");
+  } else {
+    callback("Something failed", null);
+  }
+}
+
+getData(function(error, data) {
+  if (error) {
+    myDisplayer(error);
+    return;
+  }
+  myDisplayer(data);
+});
+```
+4. JS Promises 
+- JavaScript Promises were created to make asynchronous JavaScript easier to use.
+- A Promise object represents the completion or failure of an asynchronous operation.
+
+**Creating a Promise**
+
+**Syntax**
+```js
+let myPromise = new Promise(function(resolve, reject) {
+
+// Code that may take some time
+
+  resolve(value); // when successful
+  reject(value);  // when error
+})
+```
+- The promise constructor takes a function with two parameters.
+
+**Promises How To**
+
+- Here is how to use a Promise:
+```js
+myPromise.then(
+  function(value) { /* code if success */ },
+  function(value) { /* code if error */ }
+);
+```
+
+**Note**
+
+- then() takes two arguments, one callback function for success and another for failure.
+
+- Both are optional, so you can add a callback function for success or failure only.
+
+```js
+// Create a Promise Object
+let myPromise = new Promise(function(resolve, reject) {
+  ok = true;
+
+// Code that may take some time
+
+  if (ok) {
+    resolve("OK");
+  } else {
+    reject("Error");
+  }
+});
+
+// Using then() to display the result
+myPromise.then(
+  function(value) {myDisplayer(value);},
+  function(value) {myDisplayer(value);}
+);
 ```
