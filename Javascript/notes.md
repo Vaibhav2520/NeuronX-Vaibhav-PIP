@@ -919,6 +919,34 @@ async function run() {
     console.log(error);
   }
 }
-
 run();
+```
+
+# 1️⃣2️⃣ DOM Manipulation
+
+- The HTML DOM (HTML Document Object Model) is an Object Model for HTML Documents.
+
+**Accessing HTML Elements**
+The HTML DOM can be used to access HTML elements.
+
+The most common way to access an HTML element is to use the id of the element:
+
+Example : 
+
+```js
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Access a paragraph Element
+const myPara = document.getElementById("demo");
+
+// Change the content of the Element
+myPara.innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
 ```
