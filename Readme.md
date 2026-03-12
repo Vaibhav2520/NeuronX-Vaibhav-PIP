@@ -29,7 +29,7 @@ To build strong foundations in:
 | VS Code, Git, CLI | ✅ Completed |
 | HTML5 | ✅ Completed |
 | CSS |✅ Completed|
-| JavaScript | ⏳ In progress |
+| JavaScript | ✅ Completed |
 | MERN Stack | ⏳ Pending |
 | Machine Learning | ⏳ Pending |
 | Final AI Project | ⏳ Pending |
