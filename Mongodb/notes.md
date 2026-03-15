@@ -161,3 +161,29 @@ db.posts.deleteOne({ title: "Post Title 5" })
 | $gt |Value is greater than another value|
 | $gte | Value is greater than or equal to another value|
 | $lt | Value is less than another value |
+
+**Example:**
+
+```js
+db.students.find({age:{$gt:20}})
+```
+
+- Logical Operators
+
+| Operator | Meaning|
+|--------|--------|
+| $and| Returns documents where both queries match |
+| $or | Returns documents where either query matches |
+| $not | Returns documents where the query does not match|
+| $nor | Returns documents where both queries fail to match|
+
+**Example:**
+
+```js
+db.students.find({
+$or:[
+{age:20},
+{age:22}
+]
+})
+```
