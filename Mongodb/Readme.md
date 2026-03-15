@@ -112,3 +112,52 @@ db.posts.insertOne({
   date: Date()
 })
 ```
+## Mongodb Find
+
+- There are 2 methods to find and select data from a MongoDB collection, find() and findOne().
+
+## find()
+
+- To select data from a collection in MongoDB, we can use the find() method.
+- This method accepts a query object. If left empty, all documents will be returned.
+
+**Syntax**
+
+```js
+db.posts.find()
+```
+
+## Mongodb Update
+
+- To update an existing document we can use the updateOne() or updateMany() methods.
+- The first parameter is a query object to define which document or documents should be updated.
+- The second parameter is an object defining the updated data
+
+**updateOne()**
+
+```js
+db.posts.find( { title: "Post Title 1" } ) 
+```
+
+## MongoDB Delete
+
+- We can delete documents by using the methods deleteOne() or deleteMany().
+
+**deleteOne()**
+- The deleteOne() method will delete the first document that matches the query provided.
+
+```js
+db.posts.deleteOne({ title: "Post Title 5" })
+```
+
+## Mongodb Query Operator 
+
+- Comparison Operators
+
+| Operator | Meaning|
+|--------|--------|
+| $eq| Values are equal |
+| $ne | Values are not equal |
+| $gt |Value is greater than another value|
+| $gte | Value is greater than or equal to another value|
+| $lt | Value is less than another value |
