@@ -258,3 +258,33 @@ Test API using:
 - Postman
 - Thunder Client
 - curl
+
+## REST API
+
+- REST = Representational State Transfer
+- REST APIs follow standard rules.
+Common endpoints:
+
+| Purpose| Method | Purpose |
+|--------|--------|--------|
+|/user | GET | Get all user|
+|/users| POST | Create user |
+| /users/:id | PUT |Update user|
+| /users/:id | DELETE | Delete user |
+
+Example:
+```js
+app.get("/users",(req,res)=>{
+res.send("Get all users");
+});
+```
+
+## JSON Response
+- APIs usually send responses in JSON format.
+
+```js
+res.json({
+name:"Laptop",
+price:50000
+});
+```
