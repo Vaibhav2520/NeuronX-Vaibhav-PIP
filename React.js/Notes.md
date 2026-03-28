@@ -173,3 +173,97 @@ function User(props) {
   );
 }
 ```
+
+## State in React 
+
+- State stores dynamic data inside a component.
+- React uses useState hook.
+
+Example: 
+
+```js
+import { useState } from "react";
+
+function Counter() {
+
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h1>{count}</h1>
+
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </div>
+  );
+}
+```
+
+## Event Handling
+
+- React handles events like:
+
+1. click
+2. change
+3. submit
+
+```js
+function App() {
+
+  const handleClick = () => {
+    alert("Button Clicked");
+  };
+
+  return (
+    <button onClick={handleClick}>
+      Click Me
+    </button>
+  );
+}
+```
+
+## useEffect Hook 
+
+- Used for side effects.
+- Like API Calls , Fetching data 
+
+```js
+import { useEffect } from "react";
+
+function App(){
+
+  useEffect(() => {
+    console.log("Component Loaded");
+  }, []);
+
+  return <h1>Hello</h1>;
+}
+```
+- [] means it runs only once after component loads.
+
+## React Router
+
+- Used to create multiple pages in React.
+- Install:
+
+```t
+npm install react-router-dom
+```
+
+```js
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
