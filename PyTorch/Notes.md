@@ -120,3 +120,62 @@ model = nn.Linear(2,1)
 9. Loss Function
 
 - Loss functions measure how wrong the model predictions are.
+
+```py
+loss_function = nn.MSELoss()
+```
+
+Common loss functions:
+
+- MSELoss
+- CrossEntropyLoss
+
+
+10. Optimizers
+
+- Optimizers update model weights to improve performance.
+
+```py
+import torch.optim as optim
+
+optimizer = optim.SGD(model.parameters(), lr=0.01)
+```
+
+Common optimizers:
+
+- SGD
+- Adam
+
+11. Training Loop
+
+Basic steps for training a model:
+
+- Forward pass
+- Calculate loss
+- Backward pass
+- Update weights
+
+```py
+optimizer.zero_grad()
+
+output = model(input)
+
+loss = loss_function(output, target)
+
+loss.backward()
+
+optimizer.step()
+```
+
+12. PyTorch Workflow
+
+- Typical deep learning workflow:
+
+Load Data → Create Model → Define Loss → Train Model → Evaluate Model
+
+**Advantages of PyTorch**
+
+- Easy to learn
+- Flexible and dynamic computation graph
+- Strong community support
+- Works well with Python ecosystem
